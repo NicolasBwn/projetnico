@@ -314,18 +314,6 @@ MSAREVEAL.org --> Si on doit montrer en couleur des alignements multiples, plus 
 AlphaFold --> Prédiction de structure de protèine en 3D
 ----------------------------------------------------------------------------------------------------------
 
-combien de sra de métagénomique de lac de l'antarctique et combien on été analysé ?
-
-Quelle est la liste des banque en format blast disponible au ncbi, comment pour l'avoir, pour en prendre une sans j'amais en avoir eu, 
-
-quelle est la taille de la nouvelle banque à la mode
-
-Quelle est la version courante du paquet blast +
-
-
-
-----------------------------------------------------------------------------------------------------------
-
 
 --------------------------------------------------------------------------------------------------------------------
 Cours du 15 septembre
@@ -408,16 +396,47 @@ Puratos
 --------------------------------------------------------------------------------------------------------------------
 Cours du 4 octobre
 
+R421 
 
+----Configurer notre R----
 
+Dans /opt/R-'version de notre R avec les .'
+./configure --prefix=/opt/R'version du R' --enable-R-shlib
+make -j9 
+make install
+----              
 
-
-
-
-
+---- 
+             opt/rs/bin/rstudio --> Lancer rstudio
+Configurer
+opt/rstudio-2022.07.2+576/bin/rstudio
+export RSTUDIO_WHICH_R=/opt/R421/bin/
 
 
 --------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
