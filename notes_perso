@@ -1,0 +1,423 @@
+
+
+S288C_reference_genome_R64-2-1_20150113 --> Devrait être ref !
+
+
+
+
+samtools view -C -T genomecomp.fa genome.s.bam -o genome.cram
+
+
+
+Cours du 20 oct : Je suis arrivé à la commande :sudo bowtie2 -x refgenome --interleaved ERR1095153.fastq -S genome_sam -p 6 --> Je viens de la finir --> C'est bon j'ai tout terminé, jusqu'à la commande cram, donc niquelS
+
+TOUS MES ERR... ET TOUS LES FICHIERS POUR SRA SONT DANS /opt/sratoolkit.2.11.1-ubuntu64/bin/tmpp !!!
+
+-------------------------------------------------------------------------------------------------------
+Cours 21 octobre 
+
+samtools tview test.s.bam ch3 --> Intérressant 
+
+Tablet aussi, il est dans /opt/Tablet
+
+----------------------------------
+Commandes fastqSimulate into bowtie/tablet 
+
+ sudo fastqSimulate -f ch3 -l 250 -x 16 -o testch3 -pe 800, 50
+ sudo velveth /opt/sratoolkit.2.11.1-ubuntu64/bin/tmpp/ 31 -fastq -interleaved testch3.i.fastq  -short 
+  954  ls -l
+  955  cat Sequences 
+  956  ls -lh
+  957  velvetg
+  958  velvetg /opt/sratoolkit.2.11.1-ubuntu64/bin/tmpp/
+  959  sudo velvetg /opt/sratoolkit.2.11.1-ubuntu64/bin/tmpp/
+  960  ls -l
+  961  bandage
+  962  infoseq contigs.fa 
+  963  velvetg
+  964  sudo velvetg /opt/sratoolkit.2.11.1-ubuntu64/bin/tmpp/ -exp_cov auto -cov_cutoff auto
+  965  infoseq contigs.fa 
+  966  ls -l
+  967  infoseq contigs.fa 
+  968  bowtie2-build contigs.fa ch3contig
+  969  sudo bowtie2-build contigs.fa ch3contig
+  970  bowtie2 ch3contig.1.bt2 --interleaved testch3.i.fastq -S testch3contig.sam
+  971  sudo bowtie2 ch3contig.1.bt2 --interleaved testch3.i.fastq -S testch3contig.sam
+  972  sudo bowtie2 ch3contig --interleaved testch3.i.fastq -S testch3contig.sam
+  973  ls -l
+  974  sudo bowtie2-build contigs.fa ch3contig
+  975  ls -lh
+  976  sudo bowtie2 ch3contig --interleaved testch3.i.fastq -S testch3contig.sam
+  977  sudo bowtie2 ch3contig --interleaved testch3.i.fastq -S testch3contig.sam -p 6
+  978  sudo bowtie2 -x ch3contig --interleaved testch3.i.fastq -S testch3contig.sam -p 6
+  979  samtools view testch3contig.sam -o testch3contig.bam
+  980  sudo samtools view testch3contig.sam -o testch3contig.bam
+  981  sudo samtools sort testch3contig.bam -o testch3contig.s.bam
+  982  sudo samtools index testch3contig.s.bam 
+  983  tablet testch3contig.s.bam contigs.fa 
+-----------------------------------------------------------
+
+--------
+/!\ /!\ /!\ /!\ /!\ /!\ /!\ /!\ Makefile /!\ /!\ /!\ /!\ /!\ v /!\ /!\
+--------
+Ou je lis: $<
+
+Ou j'écris: $@
+
+
+Makefile -f le nom du makefile  qu'on veut lancer 
+
+
+Régle makefile --> cible: (dépendance(pas obligé))
+
+                    $@: $<
+                   Ou
+
+                   targets : prerequisites
+                             recipe
+                             …
+                   Ou encore 
+
+                   targets : prerequisites ; recipe
+                              recipe
+                               …
+
+make -n --> commandes qu'il ferait sans les faire
+
+
+.SECONDARY --> empêche de remove les fichiers "temporaires" --> C'est une régle, pas besoin de dépedance, il faut juste cette règle  
+
+
+Big tuto MAKEFILE ---> https://www.gnu.org/software/make/manual/make.html
+------------------------------------------------------------------------------------------------------
+Cours du 22 oct
+
+TT--> TOUS LES TEXTES 
+TT:=$(wildcard *.txt)
+
+TD--> Fait devenir un fichier par un autre nom 
+TD:=$(patsubst %.1.fastq,%.s.bam,$(TF))
+
+go: $(TD)
+%.txt.gz : %.txt
+    gzip -k $<
+
+go est une régle --> si on fait make, c'est toujours la 1ère régle qui est faites en premier 
+go néccessite TD et TD néccessite TT pour être faites 
+
+TT et TT, ce sont des variable on peut les changer comme pour "go"
+
+
+make -b --> c'est force tout 
+
+
+
+-----------------------
+Pour du raid 
+
+wiki sur --> http://10.1.120.50/dokuwiki/doku.php?id=mdadm
+
+
+-----------------------------------------------------------------------------------------------------
+Cours du 26 oct 
+
+
+samtools view saccha_cere.s.bam | head -200 | awk '{print $3,$4,$4+length($10)}' | uniq -cd ---> Très puissant, nan en vrai utile, l'argument "length" calcule la longueur d'une colonne !
+
+
+-----------------------------------------------------------------------------------------------------
+Cours du 27 oct 
+
+sudo bowtie2 -x saccha_cere --fr -I 600 -X 900 --interleaved ERR1095153.fastq -S saccha_cere.sam -p 8
+
+--> Le truc nouveau c'est le --fr qui est forward/reverse 
+
+
+"Netoyer" le fichier fastq pour tablet--> sed -i 's/#[[:digit:]]$//' nomdufichier.fastq
+
+
+
+
+awk '/^>/ {x=x+1;print ">"x;getline};// {print}' nc_001135.fasta >dgn ---> pas finie
+
+
+
+
+
+fastqSimulate -f dgn -x 40 -l 300 -pe 800 50 -em 0.01 -ei 0 -ed 0 -o fss
+
+
+fichier /opt/fs --> fichier SAM normalement 
+
+
+
+
+---------------------------------------------------------------------------------------------------------
+Cours du 29 oct 
+
+
+AC=set(list("ACGT"))
+-> AC
+-> A,C,G,T
+
+
+slu=set(list(sequ)) --> sequence de l'utilisateur 
+
+slu&AC==slu -->chekc si slu est dans AC, ensuite retest si AC est dans slu 
+
+
+slu.issubset(AC) --> est ce que slu est un sous ensemble de AC 
+
+
+slu-AC
+-> vide ou pas vide --> si pas vide c'est qu'il y a un truc de pas bon, en trop donc mauvais, si vide parfait c'est que toutes les lettres sonbt bonnes
+
+
+join --> trop utile, mais genre vraiment
+
+Pas oublier de mettre dir() d'un truc pour savoir tout ce qu'on peut faire avec ce truc,  montre tous les arguments en gros que l'on peut adapter à ce truc
+
+
+-------------------------------------------------------------------------------------------------------
+Cours du 10 novembre 
+
+grant all privileges on levure.* to 'nicolas'@'localhost' identified by 'xxxx' ;
+flush privileges;
+
+
+import pymysql
+C=pymysql.connect(host="localhost",db="levure",user="votrenom",password="mdp")
+c=C.cursor()
+c.execute ("""commande""")
+c.fetchall() --> list
+c.fetchone() -->une ligne
+
+C.commit()
+
+
+
+
+
+cmd="""insert gene values("%s","%s",%i,%i)"""
+
+
+c.execute("insert gene values(%s,%s,%s,%s)",("gb","ch1",12,26))
+
+C.commit()
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 16 novembre 
+dans mariadb
+grant select on levure.* to "guest"@"" identified by "guest" ;
+
+dans mysql, avec clé primaire
+mysql levure -e 'replace into gc values ("tutu","toto","tata") 
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 19 novembre 
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 23 novembre 
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 30 novembre
+
+makeblastdb -in fichier_qu_on_veut_utiliser
+
+
+
+grep '^>' gpg.fa |nl grep MTH1
+
+
+
+grep -v '^@' magicblast97.sam | awk '{print $3}'|sort|uniq -c >mb.gc
+
+http://big/dokuwiki/doku.php?id=cufflinks ---> Pour Cufflinks
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 7 décembre
+Vecteur propre 
+
+fpkm = fragment par .... (je sais plus)
+
+ifconfig -> voir adresse ip
+----------------------------------------------------------------------------------------------------------
+Cours du 14 décembre
+
+dada2
+Pour aller dans rstudio 412
+export RSTUDIO_WHICH_R=/opt/R412/bin/R
+rstudio --no-sandbox
+
+sed -n '12001 
+
+
+
+
+----------------------------------------------------------------------------------------------------------
+Cours du 17 décembre 
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+On prend le fichier 
+saccharomyces_cerevisiae_R64-2-1_20150113.gff
+Et on utilise sed pour ne garder que la partie fasta, où les chromosomes sont bien inscrits 
+
+grep -n'FASTA'bonneref
+sed '1.23078 d'bonneref
+sed '1.23078 d'bonneref | head
+ou
+sed '1,/^##FASTA/d' bonneref | head
+sed -i'1,/^##FASTA/d' bonneref
+
+
+bcftools mpileup -f 'taref' 'fichier.s.bam | bcftools call -mv -o nom_fichier_final.txt
+
+bowtie2-build --> il sert à indexer la référence
+
+
+----------------------------------------------------------------------------------------------------------
+
+on mute ch3 (avec msbar) et on crée un fichier avec ch3 muté et ch3 normal (attention on a modif la première ligne de chaque séquence pour avoir >1>2)
+on prend ce fichier (qu'on appelle dgn) et on crée des reads à partir de celui-ci grâce à fastqsimulate
+on obtient fs.i.fastq
+on bowtie2 fs.i.fastq par rapport à ch3 (comme ref)
+on fait samtools etc, puis bcftools mpileup pour variant calling
+(à partir du fichier.s.bam)
+
+
+----------------------------------------------------------------------------------------------------------
+
+Il faut avoir ch3
+msbar ch3
+cat ch3 >> nc_001135.fasta
+awk'/^>/{x=x+1;print ">"x;getline};//{print}'nc_001135.fasta>dgn
+fastqSimulate -f dgn -x 40 -l 300 -pe 800 50 -em 0.01 -ei 0 -ed 0 -o fs
+/opt/b2/bowtie2 -x reflevch3 --fr -l 600 -X 1200 --interleaved fs.i.fastq -S test.sam -p 8 
+samtools view -b test.sam -o test.bam
+samtools sort test.bam -o test.s.bam
+samtools index test.s.bam
+bcftools mpileup -f ch3 test.s.bam | bcftools call -mv -o test.bcf
+less test.bcf
+
+----------------------------------------------------------------------------------------------------------
+
+MSAREVEAL.org --> Si on doit montrer en couleur des alignements multiples, plus du show que de la science.
+
+AlphaFold --> Prédiction de structure de protèine en 3D
+----------------------------------------------------------------------------------------------------------
+
+combien de sra de métagénomique de lac de l'antarctique et combien on été analysé ?
+
+Quelle est la liste des banque en format blast disponible au ncbi, comment pour l'avoir, pour en prendre une sans j'amais en avoir eu, 
+
+quelle est la taille de la nouvelle banque à la mode
+
+Quelle est la version courante du paquet blast +
+
+
+
+----------------------------------------------------------------------------------------------------------
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 15 septembre
+
+mysql
+ -> select * from ... ; 
+drop table if ...
+drop by ...
+group by ... (en le groupant)
+
+select 
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 19 septembre 
+
+
+cd puis -> blastest
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 22 septembre
+
+github
+
+projet bac32022
+
+git status -> statut
+git add -> ajouter un fichier 
+git commit -m "message"
+git push -> push le fichier sur le github
+
+
+git pull -> mise à jour du fichier github
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 26 septembre 
+
+
+zcat 'fichier gz' | seqret stdin stdout | /opt/blast-2.2.26/bin/formatdb -i stdin (format fa) -p 'Prot (T) ou Nuc (F)' -o T -n 'nomdufichier'
+
+Capture du 2022-09-26 14-59-53
+
+sed '1,/^##FASTA/d' -> clean le fichier pour fasta
+
+/opt/blast-2.2.26/bin/fastacmd -> inform
+
+/opt/blast-2.2.26/bin/fastacmd -d bct -D 1 -> recréer du fasta
+
+/opt/blast-2.2.26/bin/fastacmd -d /data/bdbs/P/TransAll -D 1 | grep 'GAL4' -> Prendre un élément de la banque TransAll et le mettre sous format fasta
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 29 septembre
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 3 octobre 
+
+transAll = yorf
+Mes fichier .fa sont dans MesSeq
+find .| grep 'fa$
+
+/opt/blast-2.2.26/bin/blastall -p blastn -i AB000100.fa -d /data/bdbs/N/yor
+
+swissprot -> tout ce qui existe
+trmbl -> peut exister
+
+Psiblast = blastpgp
+
+Mettre des checkpoints quand on fait un psi blast -> -C 'nom.chk' -> -R 'nom.chk fichier qu'on reprend pour reprendre le checkpoint' 
+
+
+/opt/blast-2.2.26/bin/blastpgp -p patseedp -i DAL81.fa -d /data/bdbs/P/TransAll -k test.pat -a 8 -j 9 -m 3| less
+
+--------------------------------------------------------------------------------------------------------------------
+Puratos
+--------------------------------------------------------------------------------------------------------------------
+Cours du 4 octobre
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+
+
+
