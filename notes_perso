@@ -414,6 +414,36 @@ export RSTUDIO_WHICH_R=/opt/R421/bin/
 
 
 --------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+
+Dans /optfichier R -> 
+
+v=$(cat VERSION | sed -e 's/\.//g')
+echo $v
+./configure --prefix=/opt/R'$v' --enable-R-shlib
+
+
+#1 /bin/sh
+v=$(basename $0 | cut -d 's' -f2)
+export RSTUDIO_WHICH_R=/opt/R$v/bin/R
+/opt/rs/bin/rstudio
+
+
+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 10 octobre
+
+Dans /opt/bp
+./update_blastdb.pl --showall -> voir les banques disponibles avec blast+
+Ensuite faire la commande plus le nom de la banque pour l'avoir ->/opt/bp/update_blastdb.pl --decompress 'nom de banque'
+
+
+/opt/bp/blastp -query /home/nicolas/MesSeq/DAL81.fa -db swissprot -seg yes -soft_masking yes  | less
+
+--> -help pour blast+
+
+
+
 
 
 
