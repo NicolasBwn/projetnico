@@ -442,7 +442,7 @@ Ensuite faire la commande plus le nom de la banque pour l'avoir ->/opt/bp/update
 --------------------------------------------------------------------------------------------------------------------
 Cours du 11 octobre 
 
-Ctrl+Enter -> executer la ligne de commande dans rstudio
+Ctrl+Enter -> executer la ligne de commande 
 
 library(RMySQL)
 conn = dbConnect (RMySQL::MySQL(),
