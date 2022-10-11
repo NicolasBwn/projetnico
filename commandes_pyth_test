@@ -1,0 +1,67 @@
+#!/usr /bin/env python
+fn 
+'simple.s.fastq'
+
+df.readline() ""lis le fichier df, ligne par ligne""
+
+df.readlines() ""lis toutes les lignes restantes du fichier df""
+
+df.tell() ""donne le nbre de lignes restantes""
+
+df.seek(""position par octect"") ""remet à la position donnée""
+
+tlt=df.read() """variable tlt qui contient tout le texte de df"""
+
+compteur=0
+for ligne in df:
+      compteur+=1 """compte les lignes"""
+
+dir(df) """quelles sont les méthodes de l'objet"""
+
+import os
+cmd="ls -l /tmp"
+dfc=os.popen(cmd)
+dfc.read() """vient de lire dans python le texte produit pas la commande"""
+
+
+---------------------------------------------------------------------------
+
+a="tutu"
+b="toto"
+
+c=a+b """va écrire tututoto"""
+print(c)
+read=25
+lc =">read "+read """ne va pas focntionner, car phrase + variable"""
+
+lc=">read "+str(read)"""ici ça va marcher"""
+print(lc)
+
+
+pt=">read %i"
+for x in range (1.11) :
+    print (pt%x)
+
+
+%f """pour nombre à virgule"""
+
+nom="camille"
+f=3.14
+pt="Cher %s c'est la %i eme fois que je vous reclame mes %f euros" """%s=string, %i= entier, %f= nbre à virgule""""
+print(pt%(nom,x,f)
+print ("Cher {}".format(nom)) """essaye j'ai pas trop suivis"""
+
+
+
+------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
