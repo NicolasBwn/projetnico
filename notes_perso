@@ -312,7 +312,6 @@ less test.bcf
 MSAREVEAL.org --> Si on doit montrer en couleur des alignements multiples, plus du show que de la science.
 
 AlphaFold --> Prédiction de structure de protèine en 3D
-----------------------------------------------------------------------------------------------------------
 
 
 --------------------------------------------------------------------------------------------------------------------
@@ -392,8 +391,6 @@ Mettre des checkpoints quand on fait un psi blast -> -C 'nom.chk' -> -R 'nom.chk
 /opt/blast-2.2.26/bin/blastpgp -p patseedp -i DAL81.fa -d /data/bdbs/P/TransAll -k test.pat -a 8 -j 9 -m 3| less
 
 --------------------------------------------------------------------------------------------------------------------
-Puratos
---------------------------------------------------------------------------------------------------------------------
 Cours du 4 octobre
 
 R421 
@@ -413,7 +410,7 @@ opt/rstudio-2022.07.2+576/bin/rstudio
 export RSTUDIO_WHICH_R=/opt/R421/bin/
 
 
---------------------------------------------------------------------------------------------------------------------
+
 --------------------------------------------------------------------------------------------------------------------
 
 Dans /optfichier R -> 
@@ -433,14 +430,39 @@ export RSTUDIO_WHICH_R=/opt/R$v/bin/R
 --------------------------------------------------------------------------------------------------------------------
 Cours du 10 octobre
 
+-> /data/BB
 Dans /opt/bp
 ./update_blastdb.pl --showall -> voir les banques disponibles avec blast+
 Ensuite faire la commande plus le nom de la banque pour l'avoir ->/opt/bp/update_blastdb.pl --decompress 'nom de banque'
 
 
-/opt/bp/blastp -query /home/nicolas/MesSeq/DAL81.fa -db swissprot -seg yes -soft_masking yes  | less
+/opt/bp/blastp -query /home/nicolas/MesSeq/DAL81.fa -db swissprot -seg(vient de segmasker -> applique un filtre) "xx xx xx" ou yes -soft_masking yes  | less
 
 --> -help pour blast+
+--------------------------------------------------------------------------------------------------------------------
+Cours du 11 octobre 
+
+Ctrl+Enter -> executer la ligne de commande dans rstudio
+
+library(RMySQL)
+conn = dbConnect (RMySQL::MySQL(),
+                   dbname='models',
+                   host='big',
+                   port=3306,
+                   user='guest'
+dbListTables(conn)
+rs= dbSendQuery(conn, "describe 35p4s")
+result= dbFetch(rs,n=-1)
+result
+rs= dbSendQuery(conn,"select fp,cyc from 35p3s limit 40000000")
+result= dbFetch(rs,n=-1)
+Lab.palette= colorRampPalette(c("purple","orange","red"), space= "Lab")
+plot(result, pch="o")
+smoothScatter(result,pch=".",nbin=500, col="black", colramp = colorRampPalette(c("green","red")))
+smoothScatter(result,pch=".",nbin=500, col="orange", colramp = Lab.palette)
+rs= dbSendQuery(conn,"select ip,fp from 35p2s limit 1000")
+result = dbFetch(rs,n=-1)
+hist(result$fp, breaks=100)
 
 
 
