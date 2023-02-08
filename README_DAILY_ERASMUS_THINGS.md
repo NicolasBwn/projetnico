@@ -6,9 +6,12 @@ I've followed the weekly meeting and met all the Bioinformatics Section of the S
 
 I’ve learn more things about Epigenetics, like Epigenome, DNA methylation, CG (or CpG) site.
 Also what epigenetics affects to, and what affects epigenetics.
-And mainly, getting an access card & SLU e-mail.
+And mainly, getting an access card & trying to get a SLU e-mail.
 
 08/02/2023
+
+I went deeper in the CpG site thing. I discovered that there's three differents categories of epigenetics ; Direct, Within-Indivudal and Across-Generations. Currently learning histone and chromatin mechanism in epigenetics.
+And trying to get Nextflow to do the exercise that Amrei sent me.
 
 
 
