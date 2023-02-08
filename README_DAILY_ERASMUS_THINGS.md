@@ -13,5 +13,7 @@ And mainly, getting an access card & trying to get a SLU e-mail.
 I went deeper in the CpG site thing. I discovered that there's three differents categories of epigenetics ; Direct, Within-Indivudal and Across-Generations. Currently learning histone and chromatin mechanism in epigenetics.
 And trying to get Nextflow to do the exercise that Amrei sent me.
 
+09/02/2023
+
 
 
