@@ -1,6 +1,6 @@
 06/02/2023
 
-I've followed the weekly meeting and met all the Bioinformatics Section of the SLU. It was a bit stressful, but in the end I was really happy to have met the whole section and I was not (anymore) stress at all. I was running everywhere to get an access card and SLU e-mail. Unfortunately, I didn't get any of those. Also, I introduce myself in the epigenetics mechanism.
+I've followed the weekly meeting and met all the Bioinformatics Section of the SLU. It was a bit stressful, but in the end I was really happy to have met the whole section and I was not stress at all. I was running everywhere to get an access card and SLU e-mail. Unfortunately, I didn't get any of those. Also, I introduce myself in the epigenetics mechanism.
 
 07/02/2023
 
