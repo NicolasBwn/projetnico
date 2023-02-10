@@ -1,6 +1,6 @@
 06/02/2023
 
-I've followed the weekly meeting and met all the Bioinformatics Section of the SLU. It was a bit stressful, but in the end I was really happy to have met the whole section and I was not stress at all. I was running everywhere to get an access card and SLU e-mail. Unfortunately, I didn't get any of those. Also, I introduce myself in the epigenetics mechanism.
+I've followed the weekly meeting and met all the Bioinformatics Section of the SLU. It was a bit stressful, but in the end I was really happy to have met the whole section and I was not stress at all. I was running everywhere to get an access card and SLU e-mail. Unfortunately, I didn't get any of those. Also, I started to understand the epigenetics mechanism.
 
 07/02/2023
 
@@ -19,3 +19,7 @@ No SLU e-mail yet :'(
 
 Today is the day, I finally got my acces card and my SLU e-mail ! Youuhouu ! At 10 in the morning, I've followed a workshop about the management of the VH building (I think haha). After that, there was a presentation on "Good Research Practice". This was a bit difficult to understand every sentence sometimes, but in the end I can say that I have understood almost all the idea.
 
+10/02/2023
+
+I have sent my first e-mail to Michael ! I have been deeper in Histone & Chromatin functioning. 
+I visited the server room with Renaud, kinda cool !
