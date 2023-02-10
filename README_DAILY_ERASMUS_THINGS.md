@@ -17,7 +17,7 @@ No SLU e-mail yet :'(
 
 09/02/2023
 
-Today is the day, I finally got my acces card and my SLU e-mail ! Youuhouu ! At 10 in the morning, I've followed a workshop about the management of the VH building (I think haha). After that, there was a presentation on "Good Research Practice". This was a bit difficult to understand every sentence sometimes, but in the end I can say that I have understood almost all the idea.
+Today is the day, I finally got my acces card and my SLU e-mail ! Youuhouu ! At 10 in the morning, I've followed a workshop about the management of the VH building (I think haha). After that, there was a presentation on "Good Research Practice". This was a bit difficult to understand every sentence sometimes, but in the end I can say that I have understood almost all the ideas.
 
 10/02/2023
 
