@@ -30,3 +30,8 @@ Another monday meeting with the whole Bioinformatics section ! I'm now in contac
 
 14/02/2023
 
+For today, I've mainly focus my day to go deeper (again) in the DNA methylation thing, Bisulfite sequencing and Epigenetics (Environment on Epigenetics).
+I adjust my quotes too.
+
+15/02/2023
+
