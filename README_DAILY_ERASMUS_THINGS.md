@@ -23,3 +23,10 @@ Today is the day, I finally got my acces card and my SLU e-mail ! Youuhouu ! At 
 
 I have sent my first e-mail to Michael ! I have been deeper in Histone & Chromatin functioning. 
 I visited the server room with Renaud, kinda cool !
+
+13/02/2023
+
+Another monday meeting with the whole Bioinformatics section ! I'm now in contact to Michael !! I'll continue reading articles about epigenetics to really get used to it.
+
+14/02/2023
+
