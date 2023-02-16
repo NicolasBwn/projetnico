@@ -39,7 +39,7 @@ I've read more articles, mainly in the library that Michael send me. After the d
 
 16/02/2023
 
-For today, I'e mainly focus my day on the DNA methylation and Cassava. I also had a meeting with Michael to introduce me to him, to explain my background and to just met us. I'm fully motivate !!
+For today, I'e mainly focus my day on the DNA methylation and Cassava. Doing some coding in python, to remember how it works haha. I also had a meeting with Michael to introduce me to him, to explain my background and to just met us. I'm fully motivate !!
 
 17/02/2023
 
