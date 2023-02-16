@@ -35,3 +35,11 @@ I adjust my quotes too.
 
 15/02/2023
 
+I've read more articles, mainly in the library that Michael send me. After the day, we had a dinner with all the bioinformatics section, it's was really fun !
+
+16/02/2023
+
+For today, I'e mainly focus my day on the DNA methylation and Cassava. I also had a meeting with Michael to introduce me to him, to explain my background and to just met us. I'm fully motivate !!
+
+17/02/2023
+
