@@ -44,3 +44,7 @@ For today, I'e mainly focus my day on the DNA methylation and Cassava. Doing som
 17/02/2023
 
 I've read some articles about pan-transcriptomic analysis due to the Micheal e-mail and finished my python code who imitate the bisulfite sequencing. But I don't really know where to go. 
+
+20/02/2023
+
+
