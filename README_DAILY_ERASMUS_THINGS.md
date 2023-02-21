@@ -47,4 +47,12 @@ I've read some articles about pan-transcriptomic analysis due to the Micheal e-m
 
 20/02/2023
 
+I've followed another Moday Meeting with the whole Bioinformatic Section. It is always interesting to hear people's week ! I have a bit more information about my internship. For today, I've read Transcriptomic articles to get used to it, like Epigenetic.
+
+21/02/2023
+
+I have continued reading Transcriptomic articles, about the mechanism, on what it is correlated with Epigenetics and the two methods that are used for Transcriptomic (Microarry and RNA-Seq)
+
+22/02/2023
+
 
