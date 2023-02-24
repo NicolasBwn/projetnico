@@ -55,4 +55,13 @@ I have continued reading Transcriptomic articles, about the mechanism, on what i
 
 22/02/2023
 
+Today, I continued reading Transcriptomic articles, I discovered that there's some step to follow to make a good Pan-transcriptomic analysis.
 
+23/02/2023
+
+Today, I had a meeting with the Epicass team, they give me information of what I'll do for my internship. I'll do an assembly of RNA-Seq data, and analyse it. The RNA data, is from RNA-Seq, Illumina (PE).
+I'll use Trinity programm.
+
+24/02/2023
+
+For today, I've read some articles about De novo transcriptome assembly using Trinity. And trying to get used with the programm. I'm waiting for Michael that copy the cassava data on planetsmasher.
