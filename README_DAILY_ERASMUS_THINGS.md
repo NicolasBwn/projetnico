@@ -65,3 +65,14 @@ I'll use Trinity programm.
 24/02/2023
 
 For today, I've read some articles about De novo transcriptome assembly using Trinity. And trying to get used with the programm. I'm waiting for Michael that copy the cassava data on planetsmasher.
+
+27/02/2023
+
+I had the monday meeting, I didn't say all the things I wanted to say, I was stressed but I don't know why ? I continued reading articles using Trinity for an assembly, and fastP.
+
+28/02/2023
+
+I received the short description of Andreas about the two analysis I'll work on. Michael just copied the CassavaFlowering data on planetsmasher, that's super good !! Here I'm making workflow about the two analysis I'll do. The base re the same for the both (QC), for Trinity I think a got a good one, just need to perfect it but mostly good. But for Haplotype analysis, I'm not used to that so I need to read articles and to understand well the purpose. But I'm really motivated so it'll be okayy.
+
+01/03/2023
+
