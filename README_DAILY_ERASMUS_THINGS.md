@@ -76,3 +76,27 @@ I received the short description of Andreas about the two analysis I'll work on.
 
 01/03/2023
 
+I started making the workflow, I almost finished the Pan-Transcriptomics one. And I ask Michael for some advices
+
+02/03/2023
+
+I finished the Pan-Transcriptomics workflow, I submit it to Michael and wait for his judgement. I also started the expression analysis one.
+I started making my presentation for my internship purpose.
+
+03/02/2023
+
+I have some trouble about making the mapping workflow one, I'm not really used to it, I dont feel well with it, I submited it to Michael to see what he'll say.
+I also continue making my presentation about my internship purpose for my school
+
+BONUS : 04/03/2023 -> We went to Stockholm with Thomas and Baptiste, it was super nice !!
+
+06/03/2023
+
+I've follow another monday meeting, we were not a lot for this one, and I almost say my previous week without "bugging" haha. Next time I'll do it !! And I also had my presentation about my internship purpose, It was terribly bad, I dispointed so many people, I went too far in the explaination, explain wrong things and didn't explain thing that were important to explain. So it was a mess. BUT I'm not discourage at all, I know I'll do a better thing next time, and I'll make people proud.
+
+07/03/2023
+
+I made a meeting with the whole EpiCass team to discuss about the approach of my analysis on 09/03. I also go deeper in the programs I'll use for the pan-transcriptomics analysis. I'm more confident with the programs, but I need to learn more thing to really get used of it, moslty about the expression analysis one.
+
+08/03/2023
+
