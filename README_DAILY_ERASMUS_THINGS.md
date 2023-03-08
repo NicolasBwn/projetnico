@@ -100,3 +100,7 @@ I made a meeting with the whole EpiCass team to discuss about the approach of my
 
 08/03/2023
 
+I've run my first jobs on planetsmasher!! Waoouuh! It's a bit different from running jobs from your own laptop, there's some steps to do before doing things. But it's cool I'm glad running some programs. I also finished the workflow because tomorrow we'll have a meeting about it, so I need to be prepared.
+
+09/03/2023
+
