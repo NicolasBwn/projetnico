@@ -104,3 +104,10 @@ I've run my first jobs on planetsmasher!! Waoouuh! It's a bit different from run
 
 09/03/2023
 
+13/03/2023->17/03/2023
+- At the beginning of the week I started Trinity program on the first clone of the Cassava flowering data (DSC120).
+- He’s still in queue in the server jobs.
+- I also started to write my internship report.
+- I discovered that in the fasqc report there were a high duplication level in some replicates, I tried to understand why, I learnt that’s normal and expected.
+20/03/2023
+
