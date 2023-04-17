@@ -122,7 +122,7 @@ I've run my first jobs on planetsmasher!! Waoouuh! It's a bit different from run
 
 - All my assemblies are done (DSC120, DSC196 & DSC272)
 - I also started the quality control on those assemblies 
-- I improved my poster, but only on the esthetic way
+- I improved my poster, mainly on the esthetic way
 - I wrote a bit on my internship report
 
 
